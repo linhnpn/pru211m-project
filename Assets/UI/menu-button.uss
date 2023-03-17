@@ -1,0 +1,19 @@
+.menu-button {
+font-size: 50px; 
+text-align: center; 
+background-color: transparent; 
+font-family: Arial, sans-serif; 
+font-weight: bold; 
+color: #fff; 
+margin: 10px; 
+padding: 10px 20px; 
+border: 2px solid #fff; 
+border-radius: 10px; 
+transition: all 0.3s ease-in-out; 
+}
+
+.menu-button:hover {
+font-size: 60px; 
+transform: rotate(-10deg) scale(1.1); 
+text-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+}

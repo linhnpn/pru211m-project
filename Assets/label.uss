@@ -1,0 +1,7 @@
+.label-header {
+    -unity-font: url('project://database/Assets/Main/Font/ThaleahFat.fontsettings?fileID=12800000&guid=fbcbe4de2936ea74492c470193408586&type=2#ThaleahFat');
+    -unity-font-definition: none;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 255);
+    -unity-text-align: middle-center;
+}

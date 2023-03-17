@@ -1,0 +1,11 @@
+.button-menu {
+    font-size: 50px;
+    -unity-font-style: bold;
+    color: rgba(255, 255, 255, 255);
+    width: 500px;
+}
+
+.button-menu:hover {
+    width: 60%;
+    transition-duration: 0.3s;
+}

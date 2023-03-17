@@ -1,0 +1,16 @@
+.label-score {
+    width: 35px;
+    height: 35px;
+    border-bottom-width: 0;
+    margin-bottom: 30px;
+    -unity-font-definition: none;
+}
+
+.label-score-text {
+    -unity-font-definition: url('project://database/Assets/Main/Font/ThaleahFat_TTF%20SDF.asset?fileID=11400000&guid=ee2444e6ac14c9f48b19d54d092b8cb6&type=2#ThaleahFat_TTF SDF');
+    font-size: 35px;
+    margin-bottom: 10px;
+    -unity-text-align: lower-left;
+    margin-top: 10px;
+    -unity-font-style: normal;
+}

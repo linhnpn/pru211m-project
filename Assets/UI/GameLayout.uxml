@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="PauseScreen" src="project://database/Assets/UI/PauseScreen.uxml?fileID=9197481963319205126&amp;guid=cc293c000fe564b49973c04fcaaad413&amp;type=3#PauseScreen" />
+    <ui:Template name="LoseScreen" src="project://database/Assets/UI/LoseScreen.uxml?fileID=9197481963319205126&amp;guid=4bdbb2ca02650b343880dea1707b72ba&amp;type=3#LoseScreen" />
+    <Style src="project://database/Assets/UI/LabelScore.uss?fileID=7433441132597879392&amp;guid=186853df21077e441a017663723dabb8&amp;type=3#LabelScore" />
+    <ui:VisualElement name="Layout" style="height: 220px; flex-grow: 1; background-color: rgba(0, 0, 0, 0); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;">
+        <ui:VisualElement style="background-color: rgba(0, 0, 0, 0); -unity-text-align: upper-center; align-items: center; justify-content: flex-end; width: 100%; height: 80px; position: absolute;">
+            <ui:VisualElement name="Health" style="width: 800px; height: 50px; border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;">
+                <ui:VisualElement name="CurrentHealth" style="height: 100%; position: absolute; border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); background-color: rgb(255, 0, 0); width: 50%;" />
+                <ui:Label text="Label" display-tooltip-when-elided="true" name="HealthDetail" style="position: absolute; width: 100%; -unity-text-align: middle-center; font-size: 35px; -unity-font-style: bold;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="align-items: flex-end; justify-content: flex-end; font-size: 35px; -unity-text-align: middle-center; height: 80px; padding-left: 10px; padding-right: 100px;">
+            <ui:Label text="Label" display-tooltip-when-elided="true" name="Time" style="-unity-text-align: upper-center; -unity-font-style: bold; color: rgb(255, 255, 255); -unity-font-definition: url(&apos;project://database/Assets/Main/Font/ThaleahFat_TTF%20SDF.asset?fileID=11400000&amp;guid=ee2444e6ac14c9f48b19d54d092b8cb6&amp;type=2#ThaleahFat_TTF SDF&apos;); font-size: 35px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="position: absolute; width: 100%; flex-direction: row; margin-left: 50px; margin-top: 20px;">
+            <ui:VisualElement>
+                <ui:Label display-tooltip-when-elided="true" class="label-score" style="background-image: url(&apos;project://database/Assets/Undead%20Survivor/Sprites/Enemy%201.png?fileID=-493647738&amp;guid=3bcb7877229a5334da528f2f0872b5c3&amp;type=3#Run 0&apos;);" />
+                <ui:Label display-tooltip-when-elided="true" class="label-score" style="background-image: url(&apos;project://database/Assets/Main/Sprites/Enemy%203.png?fileID=1544975445&amp;guid=beb9390efe093c74bac71a00a635de2c&amp;type=3#Run 1&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement style="margin-left: 14px;">
+                <ui:Label text="x0" display-tooltip-when-elided="true" name="NormalS" class="label-score-text" />
+                <ui:Label text="x0" display-tooltip-when-elided="true" name="BossS" class="label-score-text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="PauseScreen" name="PauseScreen" style="position: absolute; width: 100%; height: 100%; display: none;" />
+    <ui:Instance template="LoseScreen" name="LoseScreen" style="position: absolute; width: 100%; height: 100%; background-color: rgba(56, 56, 56, 0.43); margin-top: 0; display: none; padding-top: 100px; color: rgb(255, 255, 255);" />
+</ui:UXML>
